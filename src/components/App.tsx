@@ -1,15 +1,13 @@
-import { ApolloProvider } from '@apollo/client';
+// import { ApolloProvider } from '@apollo/client';
 import { ThemeProvider } from '@mui/material';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import { theme } from '../config/theming';
-import { getApolloClient } from '../graphql/apollo/apollo';
-import useLocalStorage from '../hooks/useLocalStorage';
-import Homepage from './pages/offline/Homepage';
+// import { getApolloClient } from '../graphql/apollo/apollo';
+// import useLocalStorage from '../hooks/useLocalStorage';
 import './App.scss';
-import AutoLoginProvider from './providers/AutoLoginProvider';
 import Portfolio from "./pages/online/Portfolio.tsx";
 
 const onlineRouter = createBrowserRouter([
@@ -20,16 +18,16 @@ const onlineRouter = createBrowserRouter([
 ]);
 
 const App = () => {
-  const { get } = useLocalStorage();
+  // const { get } = useLocalStorage();
 
   return (
-    <ApolloProvider client={getApolloClient(get('bearer-token', ''))}>
+    // <ApolloProvider client={getApolloClient(get('bearer-token', ''))}>
       <ThemeProvider theme={theme}>
         {/*<AutoLoginProvider offlineComponent={<Homepage />}>*/}
           <RouterProvider router={onlineRouter} />
         {/*</AutoLoginProvider>*/}
       </ThemeProvider>
-    </ApolloProvider>
+    // </ApolloProvider>
   );
 }
 
