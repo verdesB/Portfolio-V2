@@ -7,9 +7,9 @@ import {AvatarFallback, Avatar, AvatarImage} from "./SubComponents/Avatar.tsx";
 import moi from '../../../assets/moi.jpg'
 import {AnimatedTooltip} from "./SubComponents/IconsTechno.tsx";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from './SubComponents/Tabs.tsx'
-import {techFront, techBack, words, techBdd} from "@/components/pages/data/data.ts";
-import Header from "@/components/pages/online/SubComponents/Header.tsx";
-import {useWindowDimensions} from "@/hooks/useWindowDimensions.tsx";
+import {techFront, techBack, words, techBdd} from "../data/data.ts";
+import Header from "./SubComponents/Header.tsx";
+import {useWindowDimensions} from "../../../hooks/useWindowDimensions.tsx";
 
 const  MainPage =  () => {
   const { width } = useWindowDimensions();

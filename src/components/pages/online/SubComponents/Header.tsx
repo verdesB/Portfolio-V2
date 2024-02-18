@@ -1,17 +1,17 @@
-import logo from "@/assets/logo.svg";
+import logo from "../../../../assets/logo.svg";
 import {
   NavigationMenu,
   NavigationMenuItem, NavigationMenuLink,
   NavigationMenuList, navigationMenuTriggerStyle
-} from "@/components/pages/online/SubComponents/NavigationMenu.tsx";
+} from "./NavigationMenu.tsx";
 import {Link} from "react-router-dom";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PersonSearchRoundedIcon from "@mui/icons-material/PersonSearchRounded";
 import HomeRepairServiceRoundedIcon from "@mui/icons-material/HomeRepairServiceRounded";
 import ContactPageRoundedIcon from "@mui/icons-material/ContactPageRounded";
-import {useWindowDimensions} from "@/hooks/useWindowDimensions.tsx";
+import {useWindowDimensions} from "../../../../hooks/useWindowDimensions.tsx";
 import {
-  Drawer, DrawerClose,
+  Drawer,
   DrawerContent,
   DrawerDescription,
   DrawerFooter,
@@ -42,7 +42,7 @@ const Header = () => {
       {width < 932 ? (
         <Drawer>
           <DrawerTrigger asChild>
-            <Button variant="outline" sx={{color: 'white', border: '1px solid white',margin: 'auto', height: '3rem', width: '3rem'}}>Menu</Button>
+            <Button variant="outlined" sx={{color: 'white', border: '1px solid white',margin: 'auto', height: '3rem', width: '3rem'}}>Menu</Button>
           </DrawerTrigger>
           <DrawerContent>
             <DrawerHeader>
@@ -53,7 +53,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList  className={" w-full gap-2 flex-wrap justify-center box-border"}>
                   <NavigationMenuItem className={" w-full box-border"}>
-                    <Link to="/" legacyBehavior passHref>
+                    <Link to="/" >
                       <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                         backgroundColor: 'rgba(154,154,154,0.63)',
                         color: 'white',
@@ -71,7 +71,7 @@ const Header = () => {
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem className={" w-full"}>
-                    <Link to="/" legacyBehavior passHref>
+                    <Link to="/" >
                       <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                         backgroundColor: 'rgba(154,154,154,0.63)',
                         color: 'white',
@@ -87,7 +87,7 @@ const Header = () => {
                     </Link>
                   </NavigationMenuItem >
                   <NavigationMenuItem className={" w-full"}>
-                    <Link to="/" legacyBehavior passHref>
+                    <Link to="/" >
                       <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                         backgroundColor: 'rgba(154,154,154,0.63)',
                         color: 'white',
@@ -103,7 +103,7 @@ const Header = () => {
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem className={" w-full"}>
-                    <Link to="/" legacyBehavior passHref>
+                    <Link to="/" >
                       <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                         backgroundColor: 'rgba(154,154,154,0.63)',
                         color: 'white',
@@ -129,7 +129,7 @@ const Header = () => {
         <NavigationMenu>
           <NavigationMenuList style={{gap: '1rem'}}>
             <NavigationMenuItem>
-              <Link to="/" legacyBehavior passHref>
+              <Link to="/" >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                   backgroundColor: 'rgba(154,154,154,0.63)',
                   color: 'white',
@@ -144,7 +144,7 @@ const Header = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/" legacyBehavior passHref>
+              <Link to="/" >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                   backgroundColor: 'rgba(154,154,154,0.63)',
                   color: 'white',
@@ -159,7 +159,7 @@ const Header = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/" legacyBehavior passHref>
+              <Link to="/" >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                   backgroundColor: 'rgba(154,154,154,0.63)',
                   color: 'white',
@@ -174,7 +174,7 @@ const Header = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/" legacyBehavior passHref>
+              <Link to="/" >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} style={{
                   backgroundColor: 'rgba(154,154,154,0.63)',
                   color: 'white',
