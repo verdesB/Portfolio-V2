@@ -2,7 +2,7 @@ import {
   ApolloClient, InMemoryCache, makeVar, NormalizedCacheObject,
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
-import { createUploadLink } from 'apollo-upload-client'
+// import { createUploadLink } from 'apollo-upload-client'
 
 let client: ApolloClient<NormalizedCacheObject> | null = null;
 let cachedToken: null | string = null;

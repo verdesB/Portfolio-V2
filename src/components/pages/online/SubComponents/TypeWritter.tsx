@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn.ts";
+import { cn } from "../../../../utils/cn.ts";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
